@@ -6,6 +6,16 @@ import App from "../components/App";
 beforeEach(() => {
   render(<App />);
 });
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Now</h1>
+      </header>
+      <ExampleComponent />
+      <TestComponent />
+    </div>
+);
 
 test('should include "Now" in the header instead of a time', () => {
   expect(
